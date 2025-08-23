@@ -1,0 +1,19 @@
+# Node / Hardhat
+node_modules
+.env
+.env.local
+.env.*.local
+
+# Hardhat / Foundry / Truffle artifacts
+cache
+artifacts
+out
+coverage
+
+# Build outputs
+dist
+build
+
+# System files
+.DS_Store
+Thumbs.db
