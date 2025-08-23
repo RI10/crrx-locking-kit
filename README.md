@@ -7,7 +7,7 @@ Includes our first attempt to lock liquidity for a memecoin (CRRX).
 
 ## Structure
 - `contracts/` — Solidity contracts (ERC-20 and ERC-721 12-month time locks).
-- `scripts/` — helper scripts (deployment, approval, lock, check).
+- `scripts/` — helper scripts (approve, lock, check).
 - `docs/` — documentation and notes (`POSTMORTEM.md`).
 - `.env.example` — environment variables (RPC, PRIVATE_KEY, etc.).
 
@@ -27,14 +27,10 @@ Includes our first attempt to lock liquidity for a memecoin (CRRX).
 2. Transfer the NFT via `safeTransferFrom`.
 3. After 12 months call `release()` → NFT goes to the beneficiary.
 
-## Verify & Publish
-Always verify the contract on BaseScan right after deployment:
-- Go to **Verify & Publish**.
-- Paste source code.
-- Select compiler version.
-- Click Verify.
+## Scripts usage
 
-Without this step, functions remain hidden in the explorer.
+All scripts use environment variables from `.env`.  
+Install dependencies first:
 
-## License
-MIT
+```bash
+npm install ethers dotenv
