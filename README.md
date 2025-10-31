@@ -1,3 +1,13 @@
+> ⚠️ **Update – August 2025:**  
+> This version is deprecated and non-functional for Uniswap V3 liquidity on Base.  
+> The original contract was designed for ERC-20 LP tokens (Uniswap V2 model),  
+> while Uniswap V3 liquidity is stored as ERC-721 NFTs.  
+> Therefore, the lock function never actually held the LP position.  
+>
+> The working replacement is now available here:  
+> [univ3-nft-locker-base-v2](https://github.com/<your-username>/univ3-nft-locker-base-v2)
+
+
 # CRRX Locking Kit
 
 Minimal repository for experiments with token and LP position time-locks on Base network.  
