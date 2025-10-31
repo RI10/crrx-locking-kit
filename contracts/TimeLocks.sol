@@ -1,3 +1,12 @@
+/**
+ * ⚠️ Deprecated – August 2025
+ * This version failed to lock Uniswap V3 LP NFTs on Base,
+ * because it treated liquidity as ERC20 tokens instead of NFT positions.
+ * See: univ3-nft-locker-base-v2 for the correct implementation.
+ */
+
+
+
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.24;
 
